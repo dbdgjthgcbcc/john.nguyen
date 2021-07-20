@@ -5,24 +5,31 @@ body {
 
 #welcome {
     position: absolute;
-    text-align: center;
     overflow: hidden;
     height: 800px;
-    color: snow;
-    left: 0;
+    color: white;
     top: 0;
     bottom: 0;
+    left: 0;
     right: 0;
+    opacity: 0.83;
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
     display: table;
     width: 100%;
     height: 100%;
-    padding-top: 500px;
+}
+
+.parallax-inner {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
 }
 
 h1 {
     font-size: 40px;
     line-height: 1.2;
-    font-family: 'Lato', sans-serif;
+    font-family: inherit;
     font-weight: 300;
 }
 
@@ -39,65 +46,119 @@ h2 {
     font-family: cursive;
 }
 
-#bio {
-    padding: 50px;
-    text-align: center;
-    font-size: 42px;
+.profile {
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: top;
 }
 
-.line {
-    height: 6px;
-    background-color: black;
-    width: 70px;
-    margin: 8px auto;
+.menu {
+    list-style: none;
+    font-family: 'Courgette', cursive;
+    position: fixed;
+    top: 0;
+    margin-top: 0px;
+    background-color: white;
+    z-index: 10;
+    cursor: pointer;
+    width: 100%;
+}
+
+.links {
+    display: inline;
+    color: navy;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+.links:hover {
+    background-color: darkgrey;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#apps {
+    background-color: blue;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#chatbot {
+    background-color: darkgray;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#games {
+    background-color: coral;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#game1,
+#game2 {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: transform .2s;
+}
+
+#game1:hover {
+    transform: scale(0.9);
+}
+
+#game2:hover {
+    transform: scale(0.9);
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+    text-shadow: 2px 2px gainsboro;
+}
+
+#contact {
+    background-color: skyblue;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact_1 a {
+    color: white;
+    text-shadow: none;
+}
+
+.contact_1 h3 {
+    display: inline;
 }
 
 p {
     max-width: 450px;
-    margin: 25px auto;
-    font-size: 20px;
-    line-height: 1.3;
+}
+
+#bio {
+    background-color: lemonchiffon;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
     text-align: center;
-}
-
-.parallax-container {
-    background-image: url("https://images.unsplash.com/photo-1606954736404-22c88d83a2f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.profile {
-    width: 200px;
-    margin-bottom: 50px;
-    border-radius: 50%;
     margin: auto;
 }
 
-.menu {
-
-    list-style: none;
+p {
+    margin: auto;
+    font-size: 35px;
     font-family: sans-serif;
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    z-index: 10;
-    cursor: pointer;
-}
-
-.links {
-    float: left;
-    color: #fff;
-    padding-top: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-bottom: 5px;
-    font-family: fantasy;
-    font-size: 20px
-}
-
-.links:hover {
-    background-color: dodgerblue;
 }
